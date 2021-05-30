@@ -10,20 +10,21 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {"JetBrainsMono NerdFont:size=9" };
-static const char dmenufont[]       = "JetBrainsMono NerdFont:size=11";
-static char normbgcolor[]           = "#222222";
-static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+static const char *fonts[]          = {"JetBrainsMono NerdFont:size=10" };
+static const char dmenufont[]       = "JetBrainsMono NerdFont:size=10";
+//static char normbgcolor[]           = "#e2d1a0";
+static char normbgcolor[]           = "#000000";
+static char normbordercolor[]       = "#404f18";
+static char normfgcolor[]           = "#f39d19";
+static char selfgcolor[]            = "#000000";
+static char selbordercolor[]        = "#f39d19";
+static char selbgcolor[]            = "#f39d19";
 static char *colors[][3] = {
     /*               fg           bg           border   */
     [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
     [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
-static const unsigned int baralpha = 0xd0;
+static const unsigned int baralpha = 0x64;
 static const unsigned int borderalpha = OPAQUE;
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
@@ -47,7 +48,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
